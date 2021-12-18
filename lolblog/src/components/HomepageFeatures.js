@@ -54,6 +54,13 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
+        <p>TypeScript 4.5 ships with some amazing features out of the box. These include enhanced Awaited type that improves asynchronous programming, supported lib from node_modules for painless upgrades, and performance optimization by using the realpathSync.native function.
+
+Also, in the beta release, TypeScript added ES modules support for Node 12. However, Microsoft believes this feature would need more “bake time.” Consequently, this feature is only available via an --experimental flag in the nightly builds of TypeScript.
+
+In this article, we would look at the new additions to the feature-packed TypeScript 4.5.
+
+Let’s get started in the next section.</p>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
