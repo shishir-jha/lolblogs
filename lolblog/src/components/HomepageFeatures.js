@@ -4,32 +4,32 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Learning by DIY',
     Svg: require('../../static/img/undraw_science.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+       After I have grasp of a topic basics, I start experimenting and building small stuff with it.
+       Lots of learning comes from that. I will write about that as well in this blog series.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Connecting the dots',
     Svg: require('../../static/img/undraw_maker_launch.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        After I have learnt a new tech by reading/studying or building on it, I will try to write on 
+        big picture what I got from that tech and How it can be added to my existing developer toolkit.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Learning a new tech',
     Svg: require('../../static/img/undraw_programming.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Where I record my notes while learning a new tech from documentation or a course or a tutorial 
+        or a book.
       </>
     ),
   },
@@ -54,13 +54,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-        <p>TypeScript 4.5 ships with some amazing features out of the box. These include enhanced Awaited type that improves asynchronous programming, supported lib from node_modules for painless upgrades, and performance optimization by using the realpathSync.native function.
-
-Also, in the beta release, TypeScript added ES modules support for Node 12. However, Microsoft believes this feature would need more “bake time.” Consequently, this feature is only available via an --experimental flag in the nightly builds of TypeScript.
-
-In this article, we would look at the new additions to the feature-packed TypeScript 4.5.
-
-Let’s get started in the next section.</p>
+        {/* <p>This is my (b)log of whatever I learn, a way to do learning in public if you will!.</p> */}
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
